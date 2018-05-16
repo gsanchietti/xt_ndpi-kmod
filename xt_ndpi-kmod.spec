@@ -6,7 +6,7 @@
 %{!?kversion: %define kversion 3.10.0-862.el7.%{_target_cpu}}
 
 Name:    %{kmod_name}-kmod
-Version: 2.0.3
+Version: 2.0.4
 Release: 1%{?dist}
 Group:   System Environment/Kernel
 License: GPLv2
@@ -80,6 +80,9 @@ done
 %{__rm} -rf %{buildroot}
 
 %changelog
+* Wed May 16 2018 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 2.0.4-1
+- nDPI: support CentOS 7.5 - NethServer/dev#5482
+
 * Thu Dec 07 2017 Filippo Carletti <filippo.carletti@gmail.com> - 2.0.3-1
 - Do NOT compress module -- Bug NethServer/dev#5385
 
